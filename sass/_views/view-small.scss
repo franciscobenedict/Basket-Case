@@ -1,0 +1,93 @@
+/* Created by Francisco Benedict - 21/05/2015 */
+
+html {
+    body {
+        .container {
+            #site-logo {}
+            h1 {
+                font-size: 18px;
+            }
+            .ng-scope {
+                #sortRule {}
+                #products {
+                    font-size: 12px;
+                    thead {
+                        tr {
+                            th {
+                                a {}
+                                a.no-sort {}
+                            }
+                            th.sorted.ascending {}
+                            th.sorted.descending {}
+                            th.item-name {}
+                            th.item-price {}
+                            th.item-size {}
+                            th.item-type, th.item-price {
+                                display: none;
+                            }
+                            th.item-cost,
+                            th.item-delete {
+                                padding-right: 10px;
+                            }
+                            th.sorted {
+                                a {}
+                            }
+                        }
+                    }
+                    tbody {
+                        tr {
+                            height: 40px;
+                            td {
+                                label {
+                                    input {
+                                        font-size: 14px;
+                                        width: 25px;
+                                    }
+                                }
+                                .button {
+                                    margin-left: 35px;
+                                }
+                                .decrement {}
+                            }
+                            td.item-price {}
+                            td.item-size {}
+                            td.item-type, td.item-price {
+                                display: none;
+                            }
+                            td.item-cost,
+                            td.item-qty {
+                                padding-right: 10px;
+                            }
+                            td.item-delete, td.empty-col {}
+                            td.item-delete {
+                                .delete {}
+                            }
+                        }
+                    }
+                }
+            }
+            #totals {
+                font-size: 18px;
+                margin-bottom: 40px;
+                .sum-section {
+                    div {
+                        float: left;
+                        margin-bottom: 20px;
+                    }
+                    div:first-child {
+                        width: 160px;
+                    }
+                }
+                #btnBuyNow {
+                    background: url(../img/sprite.png) no-repeat -1px -119px;
+                    cursor: pointer;
+                    text-indent: -9999px;
+                    height: 60px;
+                    width: 133px;
+                }
+            }
+        }
+    }
+}
+
+@import "views";

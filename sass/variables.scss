@@ -1,0 +1,24 @@
+/* Created by Francisco Benedict - 21/05/2015 */
+
+// Colors
+$primaryColor: #6699ff;
+$secondaryColor: red;
+$light-grey: #cccccc;
+$mid-grey: #999999;
+$grey: #666666;
+$dark-grey: #333333;
+$black: black;
+$white: white;
+
+// Media query breakpoints
+$viewport-minwidth: 100%;
+$break-s: 550px;
+$break-m: 800px;
+$break-l: 970px;
+$break-xl: 1280px;
+$viewport-maxwidth: 1280px;
+
+$break-point-1: $break-s;
+$break-point-2: $break-m;
+$break-point-3: $break-l;
+$break-point-4: $break-xl;

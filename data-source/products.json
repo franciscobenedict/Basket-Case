@@ -1,0 +1,53 @@
+{
+	"products": [
+		{
+			"id": "cottonTshirt",
+			"name": "Cotton T-Shirt",
+			"size": "S",
+			"price": "1.99",
+			"type": "Tops"
+		},
+		{
+			"id": "cottonTshirt",
+			"name": "Cotton T-Shirt",
+			"size": "M",
+			"price": "2.99",
+			"type": "Tops"
+		},
+		{
+			"id": "cottonTshirt",
+			"name": "Cotton T-Shirt",
+			"size": "L",
+			"price": "3.50",
+			"type": "Tops"
+		},
+		{
+			"id": "baseballCap",
+			"name": "Baseball Cap",
+			"size": "One Size",
+			"price": "2.99",
+			"type": "Headwear"
+		},
+		{
+			"id": "swimShorts",
+			"name": "Swim Shorts",
+			"size": "S",
+			"price": "2.99",
+			"type": "Swimwear"
+		},
+		{
+			"id": "swimShorts",
+			"name": "Swim Shorts",
+			"size": "M",
+			"price": "3.99",
+			"type": "Swimwear"
+		},
+		{
+			"id": "swimShorts",
+			"name": "Swim Shorts",
+			"size": "L",
+			"price": "4.99",
+			"type": "Swimwear"
+		}
+	]
+}

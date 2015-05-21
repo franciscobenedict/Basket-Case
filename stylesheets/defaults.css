@@ -1,0 +1,15 @@
+/* Created by Francisco Benedict - 21/05/2015 */
+/* line 3, ../sass/defaults.scss */
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
+/* line 12, ../sass/defaults.scss */
+.hide {
+  displayu: none;
+}

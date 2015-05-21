@@ -1,0 +1,278 @@
+/* Created by Francisco Benedict - 21/05/2015 */
+/* Created by Francisco Benedict - 21/05/2015 */
+/* line 5, ../sass/base.scss */
+html {
+  background: -webkit-linear-gradient(#cccccc, white);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#cccccc, white);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#cccccc, white);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#cccccc, white);
+  /* Standard syntax (must be last) */
+  border: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 19, ../sass/base.scss */
+html body {
+  border: 0;
+  font-family: 'Droid Serif', serif;
+  margin: 0;
+  padding: 0;
+}
+/* line 24, ../sass/base.scss */
+html body .container {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 20px;
+}
+/* line 28, ../sass/base.scss */
+html body .container #site-logo {
+  background: url(../img/sprite.png) no-repeat -89px 0;
+  height: 105px;
+  margin: 20px 0;
+  width: 250px;
+}
+/* line 34, ../sass/base.scss */
+html body .container h1 {
+  font-family: 'Droid Serif';
+  font-weight: bold;
+  font-size: 24px;
+}
+/* line 40, ../sass/base.scss */
+html body .container .ng-scope #sortRule {
+  left: 0;
+  position: absolute;
+  top: -50px;
+}
+/* line 45, ../sass/base.scss */
+html body .container .ng-scope #products {
+  border: 1px solid #999999;
+  margin: 20px 0;
+  width: 100%;
+}
+/* line 49, ../sass/base.scss */
+html body .container .ng-scope #products thead {
+  border-bottom: 1px solid #999999;
+}
+/* line 51, ../sass/base.scss */
+html body .container .ng-scope #products thead tr {
+  height: 60px;
+  color: #999999;
+}
+/* line 55, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th a {
+  color: #999999;
+  text-decoration: none;
+}
+/* line 59, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th a.no-sort {
+  cursor: not-allowed;
+}
+/* line 63, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.sorted.ascending {
+  background: url(../img/sprite.png) no-repeat -342px -164px;
+}
+/* line 66, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.sorted.descending {
+  background: url(../img/sprite.png) no-repeat -342px 15px;
+}
+/* line 69, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.item-name {
+  padding-left: 14px;
+  background-position: -348px -164px;
+}
+/* line 73, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.item-price {
+  background-position: -348px -164px;
+}
+/* line 76, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.item-cost, html body .container .ng-scope #products thead tr th.item-price {
+  text-align: right;
+}
+/* line 79, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.item-size {
+  padding-left: 20px;
+}
+/* line 82, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.item-type {
+  padding-left: 20px;
+}
+/* line 85, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.item-cost {
+  padding-right: 20px;
+}
+/* line 88, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.item-delete {
+  text-align: center;
+}
+/* line 92, ../sass/base.scss */
+html body .container .ng-scope #products thead tr th.sorted a {
+  color: #6699ff;
+}
+/* line 99, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr {
+  height: 60px;
+}
+/* line 103, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td label input {
+  border: 1px solid #999999;
+  font-size: 18px;
+  float: left;
+  height: 28px;
+  margin: 0;
+  padding: 0 5px 0 0;
+  text-align: right;
+  width: 33px;
+}
+/* line 114, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td .button {
+  margin: 0 0 0 43px;
+  text-indent: -9999px;
+  cursor: pointer;
+  width: 16px;
+  height: 14px;
+  text-align: center;
+  background: url(../img/sprite.png) no-repeat 0 -82px;
+}
+/* line 123, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td .decrement {
+  background-position: 0 -98px;
+  margin-top: 2px;
+}
+/* line 128, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td.item-name {
+  padding-left: 10px;
+}
+/* line 131, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td.item-cost, html body .container .ng-scope #products tbody tr td.item-price {
+  text-align: right;
+}
+/* line 134, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td.item-size {
+  padding-left: 20px;
+}
+/* line 137, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td.item-cost {
+  padding-right: 20px;
+}
+/* line 140, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td.item-delete, html body .container .ng-scope #products tbody tr td.empty-col {
+  text-align: center;
+}
+/* line 144, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr td.item-delete .delete {
+  background: url(../img/sprite.png) no-repeat 4px -52px;
+  cursor: pointer;
+  height: 25px;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 25px;
+}
+/* line 154, ../sass/base.scss */
+html body .container .ng-scope #products tbody tr:nth-child(even) {
+  background-color: #cccccc;
+}
+/* line 160, ../sass/base.scss */
+html body .container #totals {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+/* line 164, ../sass/base.scss */
+html body .container #totals .sum-section div {
+  float: left;
+  margin-bottom: 20px;
+}
+/* line 168, ../sass/base.scss */
+html body .container #totals .sum-section div:first-child {
+  width: 200px;
+}
+/* line 172, ../sass/base.scss */
+html body .container #totals #btnBuyNow {
+  background: url(../img/sprite.png) no-repeat -1px -119px;
+  cursor: pointer;
+  text-indent: -9999px;
+  height: 60px;
+  width: 133px;
+}
+
+/* Created by Francisco Benedict - 21/05/2015 */
+@media screen and (max-width: 549px) {
+  /* Created by Francisco Benedict - 21/05/2015 */
+  /* line 7, ../sass/_views/view-small.scss */
+  html body .container h1 {
+    font-size: 18px;
+  }
+  /* line 12, ../sass/_views/view-small.scss */
+  html body .container .ng-scope #products {
+    font-size: 12px;
+  }
+  /* line 25, ../sass/_views/view-small.scss */
+  html body .container .ng-scope #products thead tr th.item-type, html body .container .ng-scope #products thead tr th.item-price {
+    display: none;
+  }
+  /* line 28, ../sass/_views/view-small.scss */
+  html body .container .ng-scope #products thead tr th.item-cost,
+  html body .container .ng-scope #products thead tr th.item-delete {
+    padding-right: 10px;
+  }
+  /* line 38, ../sass/_views/view-small.scss */
+  html body .container .ng-scope #products tbody tr {
+    height: 40px;
+  }
+  /* line 42, ../sass/_views/view-small.scss */
+  html body .container .ng-scope #products tbody tr td label input {
+    font-size: 14px;
+    width: 25px;
+  }
+  /* line 47, ../sass/_views/view-small.scss */
+  html body .container .ng-scope #products tbody tr td .button {
+    margin-left: 35px;
+  }
+  /* line 54, ../sass/_views/view-small.scss */
+  html body .container .ng-scope #products tbody tr td.item-type, html body .container .ng-scope #products tbody tr td.item-price {
+    display: none;
+  }
+  /* line 57, ../sass/_views/view-small.scss */
+  html body .container .ng-scope #products tbody tr td.item-cost,
+  html body .container .ng-scope #products tbody tr td.item-qty {
+    padding-right: 10px;
+  }
+  /* line 69, ../sass/_views/view-small.scss */
+  html body .container #totals {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  /* line 73, ../sass/_views/view-small.scss */
+  html body .container #totals .sum-section div {
+    float: left;
+    margin-bottom: 20px;
+  }
+  /* line 77, ../sass/_views/view-small.scss */
+  html body .container #totals .sum-section div:first-child {
+    width: 160px;
+  }
+  /* line 81, ../sass/_views/view-small.scss */
+  html body .container #totals #btnBuyNow {
+    background: url(../img/sprite.png) no-repeat -1px -119px;
+    cursor: pointer;
+    text-indent: -9999px;
+    height: 60px;
+    width: 133px;
+  }
+}
+@media screen and (min-width: 550px) {
+  /* Created by Francisco Benedict - 21/05/2015 */
+}
+@media screen and (min-width: 800px) {
+  /* Created by Francisco Benedict - 21/05/2015 */
+}
+@media screen and (min-width: 970px) {
+  /* Created by Francisco Benedict - 21/05/2015 */
+}
+@media screen and (min-width: 1280px) {
+  /* Created by Francisco Benedict - 21/05/2015 */
+}

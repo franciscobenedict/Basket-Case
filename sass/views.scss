@@ -1,0 +1,21 @@
+/* Created by Francisco Benedict - 21/05/2015 */
+
+@media screen and (max-width: $break-point-1 - 1) {
+    @import "_views/view-small";
+}
+
+@media screen and (min-width: $break-point-1) {
+    @import "_views/view-medium";
+}
+
+@media screen and (min-width: $break-point-2) {
+    @import "_views/view-large";
+}
+
+@media screen and (min-width: $break-point-3) {
+    @import "_views/view-x-large";
+}
+
+@media screen and (min-width: $break-point-4) {
+    @import "_views/view-xx-large";
+}

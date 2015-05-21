@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng:app="App">
+	<head>
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
+	
+		<title>A Basket Case</title>
+
+		<!-- Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+		<!-- Load SASS / CSS files -->
+		<link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/main.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+		<!--[if IE]>
+			<link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+		<![endif]-->
+
+		<script src="js/jquery-2.0.3.min.js" type="text/javascript"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<div id="site-logo"></div>
+			<h1>A Basket Case</h1>
+			<div ng:controller="dataCtrl">
+				[ <a id="unsorted" href="" ng-click="predicate=''">Clear Sort</a> ]
+				<div id="sortRule">Sorting predicate = <span class="predicate">{{predicate}}</span> reverse = <span class="reverse">{{reverse}}</span></div>
+				<table id="products">
+					<thead>
+						<tr id="columnHeads" class="heads">
+							<!-- <th class="item-name sortable"><a href="" ng-click="predicate = 'name'; reverse=false">Name</a>(<a href="" ng-click="predicate = '-name'; reverse=false">^</a>)</th> -->
+							<th class="item-name sortable"><a href="" ng-click="predicate = 'name'; reverse=!reverse">Name</a></th>
+							<th class="item-price sortable"><a href="" ng-click="predicate = 'price'; reverse=!reverse">Price</a></th>
+							<th class="item-size sortable"><a href="" ng-click="predicate = 'size'; reverse=!reverse">Size</a></th>
+							<th class="item-type sortable"><a href="" ng-click="predicate = 'type'; reverse=!reverse">Type</a></th>
+							<th class="item-qty"><a class="no-sort">Quantity</a></th>
+							<th class="item-cost"><a class="no-sort">Cost</a></th>
+							<th class="item-delete"><a class="no-sort">Delete</a></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr id="{{product.id}}Item" class="item" ng:repeat="product in products | orderBy:predicate:reverse">
+							<td class="item-name">{{product.name}}</td>
+							<td class="item-price"><span class="currency-symbol"></span><span class="price-amount">{{product.price}}</span></td>
+							<td class="item-size">{{product.size}}</td>
+							<td class="item-type">{{product.type}}</td>
+							<td class="item-qty">
+								<label for="{{product.id}}"><input type="text" name="product" id="{{product.id}}" value="1"></label>
+								<div class="increment button">+</div><div class="decrement button">-</div>
+							</td>
+							<td class="item-cost"><span class="currency-symbol"></span><span class="cost-amount">0.00</span></td>
+							<td class="item-delete"><div class="delete">Delete</div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="totals">
+				<!-- Subtotal -->
+				<div id="subtotal" class="sum-section">
+					<div>Subtotal </div>
+					<div class="figure"><span class="currency-symbol"></span><span id="subtotal-amount">0.00</span></div>
+				</div>
+				<div class="clearfix"></div>
+
+				<!-- VAT -->
+				<div id="vat" class="sum-section">
+					<div>VAT @ <span class="vat-at"></span>% </div>
+					<div class="figure"><span class="currency-symbol"></span><span id="vatAmount">0.00</span></div>
+				</div>
+				<div class="clearfix"></div>
+
+				<!-- Grand Total -->
+				<div id="total" class="sum-section">
+					<div>Total Costs </div>
+					<div class="figure"><span class="currency-symbol"></span><span id="grandTotal">0.00</span></div>
+				</div>
+				<div class="clearfix"></div>
+
+				<!-- Buy now button -->
+				<div id="btnBuyNow" class="disabled"><a>Buy now</a></div>
+			</div>
+
+			<!-- <a id="test" href="#">TEST</a> -->
+			<div id="results"></div>
+
+		</div>
+		
+		<!-- JS -->
+		<script>document.write("<base href=\"" + document.location + "\" />");</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.js"></script>
+		<script src="app/product-app.js" type="text/javascript"></script>
+		<script src="controllers/basket-ctrl.js" type="text/javascript"></script>
+	</body>
+</html>
