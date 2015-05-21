@@ -1,39 +1,67 @@
 {
 	"products": [
 		{
-			"id": "cottonTshirt",
-			"name": "Cotton T-Shirt",
+			"id": "birdseyeSlimFitSuit",
+			"name": "Birdseye Slim Fit Suit",
 			"size": "S",
-			"price": "1.99",
-			"type": "Tops"
+			"price": "109.99",
+			"type": "suit"
 		},
 		{
 			"id": "cottonTshirt",
-			"name": "Cotton T-Shirt",
+			"name": "Plain Button Down Collared Shirt",
 			"size": "M",
-			"price": "2.99",
-			"type": "Tops"
+			"price": "24.99",
+			"type": "Shirt"
 		},
 		{
-			"id": "cottonTshirt",
-			"name": "Cotton T-Shirt",
+			"id": "ecruGeoPrintRomper",
+			"name": "Ecru Geo Print Romper",
 			"size": "L",
-			"price": "3.50",
-			"type": "Tops"
+			"price": "13.50",
+			"type": "Childrenwear"
+		},
+		{
+			"id": "birdPrintRomper",
+			"name": "Bird Print Romper",
+			"size": "M",
+			"price": "13.50",
+			"type": "Childrenwear"
+		},
+		{
+			"id": "daiseyPrintRomper",
+			"name": "Daisey Print Romper",
+			"size": "M",
+			"price": "13.50",
+			"type": "Childrenwear"
 		},
 		{
 			"id": "baseballCap",
 			"name": "Baseball Cap",
 			"size": "One Size",
-			"price": "2.99",
+			"price": "12.99",
 			"type": "Headwear"
 		},
 		{
-			"id": "swimShorts",
-			"name": "Swim Shorts",
-			"size": "S",
-			"price": "2.99",
-			"type": "Swimwear"
+			"id": "tanBrogueDerby",
+			"name": "Tan Brogue Derby",
+			"size": "10",
+			"price": "49.99",
+			"type": "Shoes"
+		},
+		{
+			"id": "blackBrogueDerby",
+			"name": "Black Brogue Derby",
+			"size": "11",
+			"price": "49.99",
+			"type": "Shoes"
+		},
+		{
+			"id": "burgundyDerbyLaceUp",
+			"name": "Burgundy Derby Lace-Up",
+			"size": "11",
+			"price": "44.99",
+			"type": "Shoes"
 		},
 		{
 			"id": "swimShorts",
@@ -41,6 +69,20 @@
 			"size": "M",
 			"price": "3.99",
 			"type": "Swimwear"
+		},
+		{
+			"id": "flamingoJerseyPyjamas",
+			"name": "Flamingo Jersey Pyjamas",
+			"size": "M",
+			"price": "24.99",
+			"type": "Nightwear"
+		},
+		{
+			"id": "greyMarlAllInOne",
+			"name": "Grey Marl All-In-One",
+			"size": "s",
+			"price": "19.99",
+			"type": "Nightwear"
 		},
 		{
 			"id": "swimShorts",
