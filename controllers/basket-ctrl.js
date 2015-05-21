@@ -45,6 +45,15 @@ function vatSetup() {
 	totalCost(grandTotal);
 }
 
+// Convert prices to true floats 2 decimal places
+function trueFloat() {
+	$('table#products tbody tr.item').each(function(){
+		var itemPrice = $(this).find('td.item-price span.price-amount');
+		var itemPriceAmount = itemPrice.text();
+		itemPrice.text(parseFloat(itemPriceAmount).toFixed(2));
+	});
+}
+
 // Calculate item cost
 function calculateItemCost() {
 	$('table#products tbody tr.item').each(function(){
@@ -89,13 +98,16 @@ function checkBasketItems() {
 //Get all order data
 function getAllOrderData() {
 	var jsonOrderObj = {},
-		orderedItemArr = [];
+		orderedItemArr = [],
+		orderedItems = '';
+
+	delete localStorage.orderedItems;
 
 	$('table#products tbody tr.item').each(function(){
 		var productName = $(this).find('.product-name').text(),
 			quantityOrdered = $(this).find('.item-qty label input').val(),
 			costOfItems = $(this).find('.item-cost .cost-amount').text();
-		
+
 		var item = {};
 		item['name'] = productName;
 		item['qty'] = quantityOrdered;
@@ -117,21 +129,25 @@ function getAllOrderData() {
 		dataType : 'text',
 		data : {jsonOrderObj:jsonOrderObj},
 		success : function(data) {
-			alert('sucessfully sent');
-			//alert(data);
-			$('#results').html(JSON.stringify(jsonOrderObj, null, '\t'));
+			if (data) {
+				alert('sucessfully sent');
+				$('#results').html(JSON.stringify(jsonOrderObj, null, '\t'));
 
-			// store the order in localStorage
-			localStorage.orderObject = JSON.stringify(jsonOrderObj);
-			//console.log(locaStorage.orderObject);
-			alert(JSON.stringify(jsonOrderObj, null, '\t'));
+				// store the order in localStorage
+				orderedItems = JSON.stringify(jsonOrderObj);
+
+				localStorage.setItem('orderedItems', orderedItems);
+
+				//locaStorage.orderObject = orderedItems;
+				//console.log('orderedItems: ' + orderedItems);
+
+				//console.log(JSON.parse(localStorage.getItem(orderedItems)));
+			}
 		},
 		error : function() {
 			alert('failed');
 		}
 	});
-	
-	console.log(locaStorage.orderObject);
 }
 
 // Remove Sort
@@ -150,8 +166,9 @@ function removeSort() {
 $(window).load(function(){
 	currencySymbolSetup();
 	vatSetup();
-	
+
 	setTimeout(function(){
+		trueFloat();
 		calculateItemCost();
 		calculateSubtotal();
 		checkBasketItems();
@@ -209,8 +226,8 @@ $(window).load(function(){
 		});
 
 		// Sorting
-		$('table#products thead tr#columnHeads th.sortable').click(function(e){
-			var sortedBy = $(this);
+		$('table#products thead tr#columnHeads th.sortable a').click(function(e){
+			var sortedBy = $(this).parent();
 			var sortOrder = $('#sortRule span.reverse').text();
 			e.preventDefault();
 			removeSort();
@@ -255,3 +272,5 @@ $('#btnBuyNow').click(function(e){
 		getAllOrderData();
 	}
 });
+
+//

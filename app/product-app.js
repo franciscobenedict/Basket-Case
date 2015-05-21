@@ -8,5 +8,9 @@ App.controller('dataCtrl', function($scope, $http) {
 	.then(function(res){
 		$scope.products = res.data.products;
 		$scope.predicate = '-name';
+
+		angular.forEach($scope.products, function (product) {
+			product.price = parseFloat(product.price);
+		});
 	});
 });
