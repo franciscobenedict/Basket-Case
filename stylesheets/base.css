@@ -2,13 +2,9 @@
 /* sass variables */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\000035}}
 html {
-  background: -webkit-linear-gradient(#cccccc, white);
   /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#cccccc, white);
   /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#cccccc, white);
   /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#cccccc, white);
   /* Standard syntax (must be last) */
   border: 0;
   height: 100%;
@@ -62,63 +58,99 @@ html body .container .ng-scope #products thead {
 html body .container .ng-scope #products thead tr {
   height: 60px;
   color: #999999;
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000357}}
 html body .container .ng-scope #products thead tr th a {
   color: #999999;
   text-decoration: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000361}}
 html body .container .ng-scope #products thead tr th a.no-sort {
   cursor: not-allowed;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000363}}
-html body .container .ng-scope #products thead tr th.sorted.ascending {
-  background: url(../img/sprite.png) no-repeat -342px -164px;
-}
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000366}}
-html body .container .ng-scope #products thead tr th.sorted.descending {
-  background: url(../img/sprite.png) no-repeat -342px 15px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000369}}
-html body .container .ng-scope #products thead tr th.item-name {
-  padding-left: 14px;
-  background-position: -348px -164px;
+html body .container .ng-scope #products thead tr th.sorted.ascending .show-sort-dir {
+  background: url(../img/sprite.png) no-repeat -349px -175px;
+  height: 14px;
+  width: 12px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000373}}
-html body .container .ng-scope #products thead tr th.item-price {
-  background-position: -348px -164px;
+html body .container .ng-scope #products thead tr th.sorted.descending .show-sort-dir {
+  background: url(../img/sprite.png) no-repeat -349px 3px;
+  height: 14px;
+  width: 12px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000376}}
-html body .container .ng-scope #products thead tr th.item-cost, html body .container .ng-scope #products thead tr th.item-price {
-  text-align: right;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000383}}
+html body .container .ng-scope #products thead tr th.item-name.sorted.ascending a,
+html body .container .ng-scope #products thead tr th.item-size.sorted.ascending a,
+html body .container .ng-scope #products thead tr th.item-type.sorted.ascending a {
+  float: left;
+  margin-right: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000387}}
+html body .container .ng-scope #products thead tr th.item-name.sorted.ascending .show-sort-dir,
+html body .container .ng-scope #products thead tr th.item-size.sorted.ascending .show-sort-dir,
+html body .container .ng-scope #products thead tr th.item-type.sorted.ascending .show-sort-dir {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000394}}
+html body .container .ng-scope #products thead tr th.item-name.sorted.descending a,
+html body .container .ng-scope #products thead tr th.item-size.sorted.descending a,
+html body .container .ng-scope #products thead tr th.item-type.sorted.descending a {
+  float: left;
+  margin-right: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000398}}
+html body .container .ng-scope #products thead tr th.item-name.sorted.descending .show-sort-dir,
+html body .container .ng-scope #products thead tr th.item-size.sorted.descending .show-sort-dir,
+html body .container .ng-scope #products thead tr th.item-type.sorted.descending .show-sort-dir {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003103}}
+html body .container .ng-scope #products thead tr th.item-name {
+  padding-left: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003107}}
+html body .container .ng-scope #products thead tr th.item-price a, html body .container .ng-scope #products thead tr th.item-cost a {
+  float: right;
+  margin-left: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003113}}
+html body .container .ng-scope #products thead tr th.item-price.sorted.ascending .show-sort-dir {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003118}}
+html body .container .ng-scope #products thead tr th.item-price.sorted.descending .show-sort-dir {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003122}}
 html body .container .ng-scope #products thead tr th.item-size {
-  padding-left: 20px;
+  padding-left: 15px;
+  padding-right: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000382}}
-html body .container .ng-scope #products thead tr th.item-type {
-  padding-left: 20px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003126}}
+html body .container .ng-scope #products thead tr th.item-type,
 html body .container .ng-scope #products thead tr th.item-cost {
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000388}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003131}}
 html body .container .ng-scope #products thead tr th.item-delete {
-  padding-right: 20px;
+  padding-right: 14px;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003136}}
 html body .container .ng-scope #products thead tr th.sorted a {
   color: #6699ff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003100}}
-html body .container .ng-scope #products tbody tr {
-  height: 60px;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003144}}
+html body .container .ng-scope #products tbody tr td {
+  padding-bottom: 20px;
+  padding-top: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003148}}
 html body .container .ng-scope #products tbody tr td label input {
   border: 1px solid #999999;
   font-size: 18px;
@@ -129,7 +161,7 @@ html body .container .ng-scope #products tbody tr td label input {
   text-align: right;
   width: 33px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003115}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003159}}
 html body .container .ng-scope #products tbody tr td .button {
   margin: 0 0 0 43px;
   text-indent: -9999px;
@@ -139,32 +171,34 @@ html body .container .ng-scope #products tbody tr td .button {
   text-align: center;
   background: url(../img/sprite.png) no-repeat 0 -82px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003168}}
 html body .container .ng-scope #products tbody tr td .decrement {
   background-position: 0 -98px;
   margin-top: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003129}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003173}}
 html body .container .ng-scope #products tbody tr td.item-name {
   padding-left: 10px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003176}}
 html body .container .ng-scope #products tbody tr td.item-cost, html body .container .ng-scope #products tbody tr td.item-price {
   text-align: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003179}}
 html body .container .ng-scope #products tbody tr td.item-size {
-  padding-left: 20px;
+  padding-left: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003182}}
+html body .container .ng-scope #products tbody tr td.item-type,
 html body .container .ng-scope #products tbody tr td.item-cost {
-  padding-right: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003187}}
 html body .container .ng-scope #products tbody tr td.item-delete, html body .container .ng-scope #products tbody tr td.empty-col {
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003145}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003191}}
 html body .container .ng-scope #products tbody tr td.item-delete .delete {
   background: url(../img/sprite.png) no-repeat 4px -52px;
   cursor: pointer;
@@ -173,25 +207,25 @@ html body .container .ng-scope #products tbody tr td.item-delete .delete {
   text-indent: -9999px;
   width: 25px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003201}}
 html body .container .ng-scope #products tbody tr:nth-child(even) {
   background-color: #cccccc;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003161}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003207}}
 html body .container #totals {
   font-size: 24px;
   margin-bottom: 40px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003211}}
 html body .container #totals .sum-section div {
   float: left;
   margin-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003215}}
 html body .container #totals .sum-section div:first-child {
   width: 200px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003173}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003219}}
 html body .container #totals #btnBuyNow {
   background: url(../img/sprite.png) no-repeat -1px -119px;
   cursor: pointer;

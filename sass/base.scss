@@ -3,13 +3,13 @@
 @import "variables";
 
 html {
-    background: -webkit-linear-gradient($light-grey, $white);
+//     background: -webkit-linear-gradient($light-grey, $white);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient($light-grey, $white);
+//     background: -o-linear-gradient($light-grey, $white);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient($light-grey, $white);
+//     background: -moz-linear-gradient($light-grey, $white);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient($light-grey, $white);
+//     background: linear-gradient($light-grey, $white);
     /* Standard syntax (must be last) */
     border: 0;
     height: 100%;
@@ -48,9 +48,11 @@ html {
                     width: 100%;
                     thead {
                         border-bottom: 1px solid $mid-grey;
-                        tr {
+	                    tr {
                             height: 60px;
                             color: $mid-grey;
+                            padding-bottom: 20px;
+                            padding-top: 20px;
                             th {
                                 a {
                                     color: $mid-grey;
@@ -61,32 +63,73 @@ html {
                                 }
                             }
                             th.sorted.ascending {
-                                background: url(../img/sprite.png) no-repeat -342px -164px;
+	                            .show-sort-dir {
+                                	background: url(../img/sprite.png) no-repeat -349px -175px;
+                                	height: 14px;
+                                	width: 12px;
+                                }
                             }
                             th.sorted.descending {
-                                background: url(../img/sprite.png) no-repeat -342px 15px;
+	                            .show-sort-dir {
+                                	background: url(../img/sprite.png) no-repeat -349px 3px;
+                                	height: 14px;
+                                	width: 12px;
+                                }
                             }
+
+                            th.item-name.sorted.ascending,
+                            th.item-size.sorted.ascending,
+                            th.item-type.sorted.ascending {
+	                            a {
+		                            float: left;
+                                	margin-right: 2px;
+	                            }
+	                            .show-sort-dir {
+	                                float: left;
+                                }
+                            }
+                            th.item-name.sorted.descending,
+                            th.item-size.sorted.descending,
+                            th.item-type.sorted.descending {
+	                            a {
+		                            float: left;
+                                	margin-right: 2px;
+	                            }
+	                            .show-sort-dir {
+                            		float: left;
+                            	}
+                            }
+
                             th.item-name {
-                                padding-left: 14px;
-                                background-position: -348px -164px;
+                                padding-left: 10px;
                             }
-                            th.item-price {
-                                background-position: -348px -164px;
+                            th.item-price,th.item-cost {
+	                            a {
+		                            float: right;
+                                	margin-left: 2px;
+	                            }
+	                        }
+                            th.item-price.sorted.ascending {
+	                            .show-sort-dir {
+	                                float: right;
+                                }
                             }
-                            th.item-cost, th.item-price {
-                                text-align: right;
+                            th.item-price.sorted.descending {
+	                            .show-sort-dir {
+                            		float: right;
+                            	}
                             }
                             th.item-size {
-                                padding-left: 20px;
+	                            padding-left: 15px;
+	                            padding-right: 5px;
                             }
-                            th.item-type {
-                                padding-left: 20px;
-                            }
+                            th.item-type,
                             th.item-cost {
-                                padding-right: 20px;
+                                padding-left: 5px;
+                                padding-right: 5px;
                             }
                             th.item-delete {
-                                padding-right: 20px;
+                                padding-right: 14px;
                                 text-align: center;
                             }
                             th.sorted {
@@ -98,8 +141,9 @@ html {
                     }
                     tbody {
                         tr {
-                            height: 60px;
                             td {
+	                            padding-bottom: 20px;
+	                            padding-top: 20px;
                                 label {
                                     input {
                                         border: 1px solid $mid-grey;
@@ -133,10 +177,12 @@ html {
                                 text-align: right;
                             }
                             td.item-size {
-                                padding-left: 20px;
+	                            padding-left: 15px;
                             }
+                            td.item-type,
                             td.item-cost {
-                                padding-right: 20px;
+                                padding-left: 5px;
+                                padding-right: 5px;
                             }
                             td.item-delete, td.empty-col {
                                 text-align: center;

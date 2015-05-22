@@ -1,0 +1,36 @@
+/* view small */
+html body .container h1 {
+  font-size: 18px; }
+html body .container .ng-scope #products {
+  font-size: 12px; }
+  html body .container .ng-scope #products thead tr th.item-size {
+    padding-left: 5px;
+    padding-right: 5px; }
+  html body .container .ng-scope #products thead tr th.item-type, html body .container .ng-scope #products thead tr th.item-price {
+    display: none; }
+  html body .container .ng-scope #products thead tr th.item-delete {
+    padding-right: 10px; }
+  html body .container .ng-scope #products tbody tr td label input {
+    font-size: 14px;
+    width: 25px; }
+  html body .container .ng-scope #products tbody tr td .button {
+    margin-left: 35px; }
+  html body .container .ng-scope #products tbody tr td.item-size {
+    padding-left: 5px;
+    padding-right: 5px; }
+  html body .container .ng-scope #products tbody tr td.item-type, html body .container .ng-scope #products tbody tr td.item-price {
+    display: none; }
+html body .container #totals {
+  font-size: 18px;
+  margin-bottom: 40px; }
+  html body .container #totals .sum-section div {
+    float: left;
+    margin-bottom: 20px; }
+  html body .container #totals .sum-section div:first-child {
+    width: 160px; }
+  html body .container #totals #btnBuyNow {
+    background: url(../img/sprite.png) no-repeat -1px -119px;
+    cursor: pointer;
+    text-indent: -9999px;
+    height: 60px;
+    width: 133px; }

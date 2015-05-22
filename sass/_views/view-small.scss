@@ -8,35 +8,24 @@ html {
                 font-size: 18px;
             }
             .ng-scope {
-                #sortRule {}
                 #products {
                     font-size: 12px;
                     thead {
                         tr {
-                            th {
-                                a {}
-                                a.no-sort {}
-                            }
-                            th.sorted.ascending {}
-                            th.sorted.descending {}
-                            th.item-name {}
-                            th.item-price {}
-                            th.item-size {}
+                            th.item-size {
+	                            padding-left: 5px;
+	                            padding-right: 5px;
+	                           }
                             th.item-type, th.item-price {
                                 display: none;
                             }
-                            th.item-cost,
                             th.item-delete {
                                 padding-right: 10px;
-                            }
-                            th.sorted {
-                                a {}
                             }
                         }
                     }
                     tbody {
                         tr {
-                            height: 40px;
                             td {
                                 label {
                                     input {
@@ -47,20 +36,13 @@ html {
                                 .button {
                                     margin-left: 35px;
                                 }
-                                .decrement {}
                             }
-                            td.item-price {}
-                            td.item-size {}
+                            td.item-size {
+	                            padding-left: 5px;
+	                            padding-right: 5px;
+                            }
                             td.item-type, td.item-price {
                                 display: none;
-                            }
-                            td.item-cost,
-                            td.item-qty {
-                                padding-right: 10px;
-                            }
-                            td.item-delete, td.empty-col {}
-                            td.item-delete {
-                                .delete {}
                             }
                         }
                     }
