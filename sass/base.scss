@@ -223,6 +223,13 @@ html {
                     height: 60px;
                     width: 133px;
                 }
+                #btnBuyNow.disabled {
+	                cursor: not-allowed;
+	                opacity: 0.4;
+                }
+            }
+            #results{
+	            margin: 20px 0;
             }
         }
     }

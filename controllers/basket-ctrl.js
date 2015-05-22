@@ -20,7 +20,6 @@ var tr = $('table tbody tr'),
 
 // Currency symbol setup
 function currencySymbolSetup(){
-	console.log('currencySymbolSetup() loaded');
 	var	htmlEntityPound		=	'&pound;',
 		htmlDecimalDollar	=	'&#36',
 		htmlEntityYen		=	'&yen;';
@@ -48,7 +47,6 @@ function vatSetup() {
 
 // Convert prices to true floats 2 decimal places
 function trueFloat() {
-	console.log('trueFloat() loaded');
 	$('table#products tbody tr.item').each(function(){
 		var itemPrice = $(this).find('td.item-price span.price-amount');
 		var itemPriceAmount = itemPrice.text();
@@ -106,7 +104,7 @@ function getAllOrderData() {
 	delete localStorage.orderedItems;
 
 	$('table#products tbody tr.item').each(function(){
-		var productName = $(this).find('.product-name').text(),
+		var productName = $(this).find('.item-name').text(),
 			quantityOrdered = $(this).find('.item-qty label input').val(),
 			costOfItems = $(this).find('.item-cost .cost-amount').text();
 
@@ -132,8 +130,8 @@ function getAllOrderData() {
 		data : {jsonOrderObj:jsonOrderObj},
 		success : function(data) {
 			if (data) {
-				alert('sucessfully sent');
 				$('#results').html(JSON.stringify(jsonOrderObj, null, '\t'));
+				alert('sucessfully sent - scroll down for results object');
 
 				// store the order in localStorage
 				orderedItems = JSON.stringify(jsonOrderObj);

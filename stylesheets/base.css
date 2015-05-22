@@ -233,3 +233,12 @@ html body .container #totals #btnBuyNow {
   height: 60px;
   width: 133px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003226}}
+html body .container #totals #btnBuyNow.disabled {
+  cursor: not-allowed;
+  opacity: 0.4;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003231}}
+html body .container #results {
+  margin: 20px 0;
+}
