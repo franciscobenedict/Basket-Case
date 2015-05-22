@@ -5,7 +5,7 @@
 			"name": "Birdseye Slim Fit Suit",
 			"size": "S",
 			"price": "109.99",
-			"type": "suit"
+			"type": "Suit"
 		},
 		{
 			"id": "cottonTshirt",
@@ -80,7 +80,7 @@
 		{
 			"id": "greyMarlAllInOne",
 			"name": "Grey Marl All-In-One",
-			"size": "s",
+			"size": "S",
 			"price": "19.99",
 			"type": "Nightwear"
 		},

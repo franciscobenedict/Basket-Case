@@ -20,11 +20,12 @@ var tr = $('table tbody tr'),
 
 // Currency symbol setup
 function currencySymbolSetup(){
+	console.log('currencySymbolSetup() loaded');
 	var	htmlEntityPound		=	'&pound;',
 		htmlDecimalDollar	=	'&#36',
 		htmlEntityYen		=	'&yen;';
 
-	tr.each(function(){
+	$('table tbody tr').each(function(){
 		var currencySymbol = $(this).find('td .currency-symbol');
 		currencySymbol.html(htmlEntityPound);
 	});
@@ -47,6 +48,7 @@ function vatSetup() {
 
 // Convert prices to true floats 2 decimal places
 function trueFloat() {
+	console.log('trueFloat() loaded');
 	$('table#products tbody tr.item').each(function(){
 		var itemPrice = $(this).find('td.item-price span.price-amount');
 		var itemPriceAmount = itemPrice.text();
@@ -164,10 +166,10 @@ function removeSort() {
 
 //Run functions on load
 $(window).load(function(){
-	currencySymbolSetup();
 	vatSetup();
 
 	setTimeout(function(){
+		currencySymbolSetup();
 		trueFloat();
 		calculateItemCost();
 		calculateSubtotal();
@@ -246,7 +248,7 @@ $(window).load(function(){
 			removeSort();
 		});
 
-	}, 500);
+	}, 200);
 });
 
 $(function(){});

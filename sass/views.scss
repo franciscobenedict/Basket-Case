@@ -1,4 +1,6 @@
-/* Created by Francisco Benedict - 21/05/2015 */
+/* sass views */
+
+@import "variables";
 
 @media screen and (max-width: $break-point-1 - 1) {
     @import "_views/view-small";

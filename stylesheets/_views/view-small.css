@@ -1,82 +1,62 @@
-/*
-Error: Undefined variable: "$break-point-1".
-        on line 3 of /Users/franciscobenedict/OneDrive/Jobsearch 2015/basket-case/sass/views.scss
-        from line 93 of /Users/franciscobenedict/OneDrive/Jobsearch 2015/basket-case/sass/_views/view-small.scss
-
-1: /* Created by Francisco Benedict - 21/05/2015 *\/
-2: 
-3: html {
-4:     body {
-5:         .container {
-6:             #site-logo {}
-7:             h1 {
-8:                 font-size: 18px;
-
-Backtrace:
-/Users/franciscobenedict/OneDrive/Jobsearch 2015/basket-case/sass/views.scss:3
-/Users/franciscobenedict/OneDrive/Jobsearch 2015/basket-case/sass/_views/view-small.scss:93
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/operation.rb:64:in `_perform'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:536:in `run_interp_no_strip'
-org/jruby/RubyArray.java:2412:in `map'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:534:in `run_interp_no_strip'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:541:in `run_interp'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:509:in `visit_media'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-org/jruby/RubyArray.java:2412:in `map'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:88:in `with_import'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-org/jruby/RubyArray.java:2412:in `map'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `visit_children'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/tree/root_node.rb:20:in `render'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/engine.rb:268:in `render'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `render'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-org/jruby/RubyMethod.java:128:in `call'
-file:/Applications/compass.app/Contents/Java/compass-app.jar!/hook/compass_patch.rb:108:in `update_stylesheet'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:215:in `update_stylesheets'
-org/jruby/RubyArray.java:1613:in `each'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Applications/compass.app/Contents/Resources/lib/ruby/compass_1.0/sass-3.4.13/lib/sass/plugin/compiler.rb:328:in `watch'
-org/jruby/RubyProc.java:271:in `call'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:252:in `on_change'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/listener.rb:290:in `initialize_adapter'
-org/jruby/RubyProc.java:271:in `call'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:252:in `report_changes'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:321:in `poll_changed_directories'
-/Applications/compass.app/Contents/Resources/lib/ruby/jruby/listen-1.3.1-patched/lib/listen/adapter.rb:297:in `start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$break-point-1\".\A         on line 3 of /Users/franciscobenedict/OneDrive/Jobsearch 2015/basket-case/sass/views.scss\A         from line 93 of /Users/franciscobenedict/OneDrive/Jobsearch 2015/basket-case/sass/_views/view-small.scss\A \A 1: /* Created by Francisco Benedict - 21/05/2015 */\A 2: \A 3: html {\A 4:     body {\A 5:         .container {\A 6:             #site-logo {}\A 7:             h1 {\A 8:                 font-size: 18px;"; }
+/* view small */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\000037}}
+html body .container h1 {
+  font-size: 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000312}}
+html body .container .ng-scope #products {
+  font-size: 12px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000325}}
+html body .container .ng-scope #products thead tr th.item-type, html body .container .ng-scope #products thead tr th.item-price {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000328}}
+html body .container .ng-scope #products thead tr th.item-cost,
+html body .container .ng-scope #products thead tr th.item-delete {
+  padding-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000338}}
+html body .container .ng-scope #products tbody tr {
+  height: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000342}}
+html body .container .ng-scope #products tbody tr td label input {
+  font-size: 14px;
+  width: 25px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000347}}
+html body .container .ng-scope #products tbody tr td .button {
+  margin-left: 35px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000354}}
+html body .container .ng-scope #products tbody tr td.item-type, html body .container .ng-scope #products tbody tr td.item-price {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000357}}
+html body .container .ng-scope #products tbody tr td.item-cost,
+html body .container .ng-scope #products tbody tr td.item-qty {
+  padding-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000369}}
+html body .container #totals {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000373}}
+html body .container #totals .sum-section div {
+  float: left;
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000377}}
+html body .container #totals .sum-section div:first-child {
+  width: 160px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/_views\/view-small\.scss}line{font-family:\0000381}}
+html body .container #totals #btnBuyNow {
+  background: url(../img/sprite.png) no-repeat -1px -119px;
+  cursor: pointer;
+  text-indent: -9999px;
+  height: 60px;
+  width: 133px;
+}

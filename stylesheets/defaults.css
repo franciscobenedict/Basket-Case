@@ -1,5 +1,5 @@
-/* Created by Francisco Benedict - 21/05/2015 */
-/* line 3, ../sass/defaults.scss */
+/* sass defaults */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/defaults\.scss}line{font-family:\000033}}
 .clearfix:after {
   content: " ";
   /* Older browser do not support empty content */
@@ -9,7 +9,7 @@
   clear: both;
 }
 
-/* line 12, ../sass/defaults.scss */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/defaults\.scss}line{font-family:\0000312}}
 .hide {
-  displayu: none;
+  display: none;
 }
