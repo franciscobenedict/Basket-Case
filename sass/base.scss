@@ -37,6 +37,21 @@ html {
                 font-size: 24px;
             }
             .ng-scope {
+	            #unsorted {
+		            background: url(../img/sprite.png) no-repeat -279px -142px;
+		            cursor: not-allowed;
+		            float: right;
+		            height: 35px;
+		            opacity: 0.2;
+		            text-indent: -9999px;
+		            transition: $ease25;
+		            width: 36px;
+	            }
+	            #unsorted.sorted-by {
+		            cursor: pointer;
+		            opacity: 1;
+		            transition: $ease25;
+	            }
                 #sortRule {
                     left: 0;
                     position: absolute;
@@ -64,14 +79,14 @@ html {
                             }
                             th.sorted.ascending {
 	                            .show-sort-dir {
-                                	background: url(../img/sprite.png) no-repeat -349px -175px;
+                                	background: url(../img/sprite.png) no-repeat -349px 3px;
                                 	height: 14px;
                                 	width: 12px;
                                 }
                             }
                             th.sorted.descending {
 	                            .show-sort-dir {
-                                	background: url(../img/sprite.png) no-repeat -349px 3px;
+                                	background: url(../img/sprite.png) no-repeat -349px -175px;
                                 	height: 14px;
                                 	width: 12px;
                                 }
@@ -135,6 +150,15 @@ html {
                             th.sorted {
                                 a {
                                     color: $primaryColor;
+                                }
+                            }
+                            th.sortable {
+                                a {
+									transition: $ease25;
+                                }
+                                a:hover {
+                                    color: $dark-grey;
+									transition: $ease25;
                                 }
                             }
                         }

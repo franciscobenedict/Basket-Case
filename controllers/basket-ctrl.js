@@ -131,7 +131,7 @@ function getAllOrderData() {
 		success : function(data) {
 			if (data) {
 				$('#results').html(JSON.stringify(jsonOrderObj, null, '\t'));
-				alert('sucessfully sent - scroll down for results object');
+				alert('sucessfully sent - scroll down to view your order');
 
 				// store the order in localStorage
 				orderedItems = JSON.stringify(jsonOrderObj);
@@ -155,6 +155,12 @@ function removeSort() {
 	$('table#products thead tr#columnHeads th.sortable').each(function(){
 		$(this).removeClass('sorted ascending descending');
 	});
+	$('#unsorted').removeClass('sorted-by');
+}
+
+// sort alphabetically on load
+function sortByName() {
+	$('#columnHeads th.item-name a').trigger('click');
 }
 
 
@@ -167,6 +173,7 @@ $(window).load(function(){
 	vatSetup();
 
 	setTimeout(function(){
+		sortByName();
 		currencySymbolSetup();
 		trueFloat();
 		calculateItemCost();
@@ -175,6 +182,7 @@ $(window).load(function(){
 
 		// Increment / Decrement item quantity
 		$('.button').on('click', function() {
+			$('#results').html('');
 			var button = $(this);
 			var oldValue = button.parent().find('input').val();
 
@@ -238,6 +246,7 @@ $(window).load(function(){
 			} else {
 				sortedBy.addClass('descending');
 			}
+			$('#unsorted').addClass('sorted-by');
 		});
 
 		// Unsorted
