@@ -131,7 +131,8 @@ function getAllOrderData() {
 		success : function(data) {
 			if (data) {
 				$('#results').html(JSON.stringify(jsonOrderObj, null, '\t'));
-				alert('sucessfully sent - scroll down to view your order');
+				$('a#showResultsTitle').html('<h2>Order Items</h2>');
+				alert('sucessfully sent - view your order below');
 
 				// store the order in localStorage
 				orderedItems = JSON.stringify(jsonOrderObj);
@@ -183,6 +184,7 @@ $(window).load(function(){
 		// Increment / Decrement item quantity
 		$('.button').on('click', function() {
 			$('#results').html('');
+			$('a#showResultsTitle').html('');
 			var button = $(this);
 			var oldValue = button.parent().find('input').val();
 
@@ -226,6 +228,7 @@ $(window).load(function(){
 		$('table#products tbody tr.item td.item-delete .delete').click(function(){
 			$(this).closest('tr.item').remove();
 			$('#results').text('');
+			$('a#showResultsTitle').html('');
 			recalculateQtyChange();
 			var itemsLeft = $('table#products tbody tr.item').length;
 			if (itemsLeft < 1) {
@@ -271,12 +274,13 @@ $('#test').click(function(e){
 });
 
 //Buy now
-$('#btnBuyNow').click(function(e){
-	e.preventDefault();
+$('#btnBuyNow').click(function(){
+/* 	e.preventDefault(); */
 	if ($(this).hasClass('disabled')) {
 		$('#results').text('');
+		$('a#showResultsTitle').html('');
 		alert('basket empty');
-		return false;
+// 		return false;
 	} else {
 		getAllOrderData();
 	}

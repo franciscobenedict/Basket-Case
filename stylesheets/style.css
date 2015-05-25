@@ -269,20 +269,38 @@ html body .container #totals .sum-section div:first-child {
   width: 200px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003243}}
-html body .container #totals #btnBuyNow {
-  background: url(../img/sprite.png) no-repeat -1px -119px;
-  cursor: pointer;
-  text-indent: -9999px;
-  height: 60px;
-  width: 133px;
+html body .container #totals a#btnBuyNow {
+  background: #333333;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  transition: all 0.25s ease;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003250}}
-html body .container #totals #btnBuyNow.disabled {
-  cursor: not-allowed;
-  opacity: 0.4;
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003251}}
+html body .container #totals a#btnBuyNow:hover {
+  background-color: #cccccc;
+  transition: all 0.25s ease;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003255}}
+html body .container #totals a#btnBuyNow.disabled {
+  background-color: red;
+  cursor: not-allowed;
+  opacity: 0.4;
+  transition: all 0.25s ease;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003262}}
+html body .container #showResultsTitle {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003264}}
+html body .container #showResultsTitle h2 {
+  color: #cccccc;
+  font-size: 24px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/franciscobenedict\/OneDrive\/Jobsearch\%202015\/basket-case\/Basket-Case\/sass\/base\.scss}line{font-family:\00003269}}
 html body .container #results {
+  color: #999999;
   margin: 20px 0;
 }
 

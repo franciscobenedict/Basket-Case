@@ -240,19 +240,34 @@ html {
                         width: 200px;
                     }
                 }
-                #btnBuyNow {
-                    background: url(../img/sprite.png) no-repeat -1px -119px;
-                    cursor: pointer;
-                    text-indent: -9999px;
-                    height: 60px;
-                    width: 133px;
+                a#btnBuyNow {
+					background: $dark-grey;
+					border-radius: 5px;
+					color: $white;
+					padding: 10px;
+					text-decoration: none;
+					transition: $ease25;
                 }
-                #btnBuyNow.disabled {
+                a#btnBuyNow:hover {
+	                background-color: $light-grey;
+	                transition: $ease25;
+                }
+                a#btnBuyNow.disabled {
+	                background-color: $secondaryColor;
 	                cursor: not-allowed;
 	                opacity: 0.4;
+	                transition: $ease25;
                 }
             }
+            #showResultsTitle {
+	            text-decoration: none;
+	            h2 {
+		            color: $light-grey;
+		            font-size: 24px;
+	            }
+            }
             #results{
+	            color: $mid-grey;
 	            margin: 20px 0;
             }
         }
